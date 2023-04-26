@@ -1,5 +1,5 @@
-# Windows Parameters:
+# Parametros Windows:
 
-
+//o attrib +r faz com que o file fique com permissao de apenas ler e attrib -r tira volta ao estado orginal podendo escrever
 attrib -r(file) 
 
