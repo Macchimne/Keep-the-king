@@ -1,5 +1,21 @@
 # Parametros Windows:
 
-//o attrib +r faz com que o file fique com permissao de apenas ler e attrib -r tira volta ao estado orginal podendo escrever
+// O attrib +r faz com que o file fique com permissao de apenas ler e attrib -r tira volta ao estado orginal podendo escrever
 attrib -r(file) 
 
+// Deslogar um usuario
+// primeiro voçe tem que descobrir o ID do processo do usuario alvo
+// usando o comando:
+query session
+
+// ja com o ID do processo
+// Voce usa o comando:
+logoff <ID do usuário ou sessão>
+
+// Excluir o Chattr:
+rmdir /S nome_do_diretorio
+//no caso do attrib (igual ao chattr) voce usa os diretorios raiz, no windows
+o attrib fica no: C:\Windows\System32\attrib.exe
+
+// o comando que seria usado seria:
+rmdir /S C:\Windows\System32\attrib.exe
