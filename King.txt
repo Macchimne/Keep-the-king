@@ -52,4 +52,7 @@ voce faz com que so voce possa logar no servidor
 //depois dẽ um service sshd restart para que seja feita a alteração
 |service sshd restart
 
-
+// IMPORTANTE!!!!
+//uma das maiores vulnerabilidades fica em  /etc/sudoers, para proteger a maquina e importante vericiar o sudoers e ver se têm algum usuário rodando algum binário com permissão Root
+|cat /etc/sudoers
+//para corrigir, voçê deve remover os binários em execução
