@@ -61,5 +61,8 @@ voce faz com que so voce possa logar no servidor
 
 // BRUTE-FORCE
 //pra corrigir brute-force voçê deve limitar as tentativas de autentificação, e isso ajuda a evitar ataques BF
-//alterando no sshd_config:
 |sudo nano /etc/ssh/sshd_config 
+//alterando o sshd_config, vá no “#MaxAuthTries 0” e retire o "#" para descomentar e altere o valor "0" para o valor desejado como exemplo "3"
+ficará como MaxAuthTries 3
+//depois de alterar dê um:
+|sudo systemctl restart sshd
