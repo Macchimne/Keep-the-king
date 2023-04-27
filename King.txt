@@ -42,4 +42,9 @@ voce faz com que so voce possa logar no servidor
 |AllowUsers user1 user2 
 
 // ALTERAR A PORTA DO SSH PADRÃO
-//Voçê pode alterar a porta padrão do ssh para uma porta alta como 5599
+//Voçê pode alterar a porta padrão do ssh para uma porta alta como 5599,4660,3569 usando
+|nano /etc/ssh/sshd_config
+//depois dẽ um service sshd restart para que seja feita a alteração
+|service sshd restart
+
+
