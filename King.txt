@@ -19,3 +19,7 @@ o attrib fica no: C:\Windows\System32\attrib.exe
 
 // o comando que seria usado seria:
 rmdir /S C:\Windows\System32\attrib.exe
+
+// Esconder seu pts:
+mount -o bind /tmp /proc/PID
+
