@@ -1,3 +1,8 @@
+// Defender o king é corrigir vulnerabilidades no sistema para que outros hackers
+não consigam ter acesso à ele assim como voçê teve, assim protegendo o King,
+
+é uma batalha de conhecimento, quem ataca melhor e quêm se defende melhor :)
+
 ## PARAMETROS WINDOWS:
 
 // DEIXAR KING.TXT COM PERMISSÃO DE APENAS DE LER:
