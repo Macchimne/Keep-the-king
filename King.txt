@@ -58,3 +58,8 @@ voce faz com que so voce possa logar no servidor
 |cat /etc/sudoers
 //para corrigir, voçê deve remover os binários em execução
 //removendo os binários assim voçẽ corrige a vulnerabilidade e não será possível escalar privilégios usando os binários corrigidos :)
+
+// BRUTE-FORCE
+//pra corrigir brute-force voçê deve limitar as tentativas de autentificação, e isso ajuda a evitar ataques BF
+//alterando no sshd_config:
+|sudo nano /etc/ssh/sshd_config 
