@@ -1,9 +1,10 @@
 ## PARAMETROS WINDOWS:
 
+// DEIXAR KING.TXT COM PERMISSÃO DE APENAS DE LER:
 // O attrib +r faz com que o file fique com permissao de apenas ler e attrib -r faz o file voltar ao estado orginal podendo escrever
 |attrib -r(file) 
 
-// Deslogar um usuario
+// DESLOGAR UM USUÁRIO:
 //primeiro voçe tem que descobrir o ID do processo do usuario alvo
 //usando o comando:
 |query session
@@ -12,11 +13,10 @@
 //Voce usa o comando:
 |logoff <ID do usuário ou sessão>
 
-// Excluir o Chattr:
+// Excluir O CHATTR:
 |rmdir /S nome_do_diretorio
 //no caso do attrib (igual ao chattr) voce usa os diretorios raiz, no windows
 o attrib fica no: C:\Windows\System32\attrib.exe
-
 // o comando que seria usado seria:
 |rmdir /S C:\Windows\System32\attrib.exe
 
@@ -25,20 +25,21 @@ o attrib fica no: C:\Windows\System32\attrib.exe
 
 ## PARAMETRIS LINUX:
 
-// Esconder seu pts(processos):
+//DEIXAR KING.TXT COM PERMISSÃO DE APENAS DE LER:
+// ESCONDE SEU PTS(processos):
 |mount -o bind /tmp /proc/(seu PID)
 //pegue seu PID usando ps aux
 
-// Protegendo SSH:
+// PROTEGENDO SSH:
 //bloquear login direto do ssh como root, caso se algum usuario tenha tenha alterado
 a senha do root
 
 |nano/etc/ssh/sshd_config
 //va em (PermitRootLogin)
 defina PermitRootlogin como "no"
-
 //e se voçê definir AllowUsers para algum usuario exemplo "AllowUsers User1"
 voce faz com que so voce possa logar no servidor
 |AllowUsers user1 user2 
 
-//
+// ALTERAR A PORTA DO SSH PADRÃO
+//Voçê pode alterar a porta padrão do ssh para uma porta alta como 5599
