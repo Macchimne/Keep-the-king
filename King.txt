@@ -53,6 +53,8 @@ voce faz com que so voce possa logar no servidor
 |service sshd restart
 
 // IMPORTANTE!!!!
+//e a primeira coisa que voçẽ deve debuggar
 //uma das maiores vulnerabilidades fica em  /etc/sudoers, para proteger a maquina e importante vericiar o sudoers e ver se têm algum usuário rodando algum binário com permissão Root
 |cat /etc/sudoers
 //para corrigir, voçê deve remover os binários em execução
+//removendo os binários assim voçẽ corrige a vulnerabilidade e não será possível escalar privilégios usando os binários corrigidos :)
